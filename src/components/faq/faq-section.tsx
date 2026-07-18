@@ -42,7 +42,7 @@ export function FaqSection() {
 	}
 
 	return (
-		<section id="faq" className="grid grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2">
+		<section data-section="faq" className="grid grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2">
 			<div>
 				<p className="font-semibold text-teal-500">{data.tagline}</p>
 				<h2 className="mt-2 font-bold text-4xl text-slate-900">

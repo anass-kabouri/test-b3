@@ -20,7 +20,7 @@ export function SkillsSection() {
 	}
 
 	return (
-		<section id="about" className="px-8 py-16">
+		<section data-section="about" className="px-8 py-16">
 			<h2 className="font-bold text-3xl text-slate-900">{data.title}</h2>
 			<ul className="mt-8 space-y-4">
 				{data.items.map(skill => (

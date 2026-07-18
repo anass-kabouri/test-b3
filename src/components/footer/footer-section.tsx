@@ -16,7 +16,7 @@ export function FooterSection() {
 	}
 
 	return (
-		<footer id="contact" className="px-8 py-16">
+		<footer data-section="contact" className="px-8 py-16">
 			<div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
 				<div>
 					<div className="flex items-center gap-3">

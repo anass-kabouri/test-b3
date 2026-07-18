@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Image from 'next/image'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -9,7 +9,10 @@ export function HeroSection() {
 
 	if (isLoading || !data) {
 		return (
-			<section id="home" className="grid min-h-[600px] grid-cols-1 items-center gap-8 px-8 py-16 md:grid-cols-2">
+			<section
+				data-section="home"
+				className="grid min-h-[600px] grid-cols-1 items-center gap-8 px-8 py-16 md:grid-cols-2"
+			>
 				<div className="space-y-4">
 					<Skeleton className="h-12 w-3/4" />
 					<Skeleton className="h-6 w-full" />
@@ -25,7 +28,10 @@ export function HeroSection() {
 	}
 
 	return (
-		<section id="home" className="grid min-h-[600px] grid-cols-1 items-center gap-8 px-8 py-16 md:grid-cols-2">
+		<section
+			data-section="home"
+			className="grid min-h-[600px] grid-cols-1 items-center gap-8 px-8 py-16 md:grid-cols-2"
+		>
 			<div>
 				<h1 className="font-bold text-4xl text-slate-900">
 					{data.greeting} <span className="font-extrabold">I'm {data.name}</span>,{' '}

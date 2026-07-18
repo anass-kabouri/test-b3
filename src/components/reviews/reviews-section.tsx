@@ -26,7 +26,7 @@ export function ReviewsSection() {
 	const visibleReviews = data.items.slice(currentIndex, currentIndex + itemsPerView)
 
 	return (
-		<section id="reviews" className="bg-slate-50 px-8 py-16 text-center">
+		<section data-section="reviews" className="bg-slate-50 px-8 py-16 text-center">
 			<h2 className="font-bold text-3xl text-slate-900">{data.title}</h2>
 			<div className="mt-10 flex flex-wrap justify-center gap-6">
 				{visibleReviews.map(review => (

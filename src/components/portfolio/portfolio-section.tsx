@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Image from 'next/image'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -20,7 +20,7 @@ export function PortfolioSection() {
 	}
 
 	return (
-		<section id="portfolio" className="px-8 py-16">
+		<section data-section="portfolio" className="px-8 py-16">
 			<h2 className="text-center font-bold text-4xl text-slate-900">{data.title}</h2>
 			<ul className="mt-12 space-y-8">
 				{data.items.map(project => (

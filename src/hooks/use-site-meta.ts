@@ -1,6 +1,6 @@
-﻿import { getSiteMeta } from '@/lib/mock-api'
-import { useAsyncData } from '@/hooks/use-async-data'
+﻿import { useAsyncData } from '@/hooks/use-async-data'
+import { getSiteMeta } from '@/lib/mock-api'
 
 export function useSiteMeta() {
-return useAsyncData(getSiteMeta)
+	return useAsyncData(getSiteMeta)
 }
